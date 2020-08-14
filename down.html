@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Minecraft下载</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="icon" href="./logo.png"/>
+<link rel="shortcut icon" href="./logo.png"/>
+<style>
+*{font-family:'微软雅黑';box-sizing:border-box;outline:none;margin:0;padding:0;border:0;text-decoration:none;-webkit-tap-highlight-color:rgba(0,0,0,0);color:#3c3c3c;}
+html,body{height:100%;margin:0 auto;max-width:760px;}
+header{position:fixed;top:0;width:100%;max-width:760px;height:56px;z-index:1}
+u{color:#fff;font-size:18px;position:fixed;top:60px;margin-left:116px;z-index:2;display:block;height:56px;line-height:56px;}
+header img{width:56px;height:56px;padding:16px}
+header img:active{background:rgba(255,255,255,0.4);}
+main{z-index:-1;position:fixed;top:0;padding-top:56px;height:172px;background:url('bg.jpg') 100%;width:100%;max-width:760px;}
+main img{width:68px;height:68px;margin:24px;float:left}
+main b{margin-top:56px;display:block;color:#fff;font-size:12px}
+main p{color:#fff;font-size:12px;margin-top:4px}
+ul{padding-top:172px}
+ul a{margin-top:-28px;margin-right:24px;background:#009688;width:56px;height:56px;float:right;box-shadow:0px 2px 8px rgba(0,0,0,0.4);border-radius:56px;}
+ul a img{width:56px;height:56px;padding:16px;}
+aside{display:block;background:#fff;height:100%;border-left:solid 1px #e0e0e0;border-right:solid 1px #e0e0e0}
+aside li{list-style:none;padding:24px 16px;color:#009688;font-size:14px;background:#fff;border-bottom:solid 1px #eee}
+aside li b{color:#d0d0d0;font-size:10px;margin-left:8px}
+aside ol{padding:16px;font-size:14px;color:#797979;background:#edf7ee;min-height:196px}
+aside p{padding:16px;}
+aside p cite{white-space:nowrap;overflow-x:auto;display:block;}
+aside p img{height:300px;background:#eee;margin-right:4px;}
+aside div{padding:16px;font-size:14px;color:#797979;min-height:196px}
+</style>
+</head>
+<body>
+<header><a href="index.html"><img src="back.png"></a></header>
+<u>Minecarft</u>
+<main><img src="icon.png"><b>V1.14.3</b><p>90.2MB / 1w次下载 / 中文</p></main>
+<ul><a href="https://pan.baidu.com/s/1AGe6BjkFIFSs-8b6w_RVxg"><img src="down.png"></a></ul>
+<aside><li>更新日志<b>(1周前)</b></li>
+<ol>- v1.14.3 修复了很多漏洞<br>
+- v1.14.2 修复了一些漏洞<br>
+- v1.14.1 修复了很多错误<br>
+- v1.14.0 蜜蜂们正在嗡嗡地飞进《我的世界》！
+这些新生物生产的蜂蜜可以用来做蜂蜜方块，并且蜜蜂可以帮助农作物更快地生长。
+我们还修复了错误和性能问题。</p></ol>
+<p><cite><img src="1.png"><img src="2.png"><img src="3.png"><img src="4.png"></cite></p>
+<li>应用介绍</li>
+<div>Minecraft 基岩版 是指包括Minecraft 手机版（Android、IOS）、Win10版（VR）、主机版（XboxOne、NS）在内的 使用“基岩引擎”（C++语言）开发的Minecraft 统一版本。
+正式版是 Minecraft 基岩版 经过一段时间的测试版测试之后得到的稳定版本，也是众多材质、Addons和官方领域服会逐渐跟进的版本。与此同时Google Play、Win10 Store等官方软件商城也会推送次更新。
+<p><b>本版本仅供用户体验游戏特性！请于24H内删除！支持正版！</b></p>
+</div>
+</aside>
+</body>
+<script>
+var header = document.getElementsByTagName("header")[0];
+var mian = document.getElementsByTagName("main")[0];
+var u = document.getElementsByTagName("u")[0];
+var a = document.getElementsByTagName("a")[0];
+window.onscroll = function(){
+if(window.scrollY<116){
+mian.style.top="-"+window.scrollY/2+"px";
+u.style.top=60-window.scrollY/1.9+"px";
+u.style.marginLeft=116-window.scrollY/2.4+"px";
+a.style.display="";
+header.style.background="";
+header.style.boxShadow="none";
+} else {
+a.style.display="none";
+header.style.background="#009688";
+header.style.boxShadow="0px 2px 8px rgba(0,0,0,0.2)";
+if(u.style.top!="0px"||u.style.marginLeft!="68.0833px"){
+u.style.top="0px";
+u.style.marginLeft="68.0833px";
+}
+}
+}
+</script>
+</html>
